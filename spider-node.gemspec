@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Spider::Node::VERSION
   spec.authors       = ["Alin Iacob"]
   spec.email         = ["alin@thegeek.ro"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Spider ruby interface using Node.js}
+  spec.description   = spec.description
   spec.homepage      = ""
   spec.license       = "MIT"
 
