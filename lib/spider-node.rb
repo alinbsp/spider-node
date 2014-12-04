@@ -5,7 +5,7 @@ require "spider-node/version"
 require "spider-node/compile_result"
 require "open3"
 
-module spider
+module Spider
   module Node
     class << self
 

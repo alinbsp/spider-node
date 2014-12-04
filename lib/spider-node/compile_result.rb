@@ -1,15 +1,9 @@
 # coding: utf-8
 
-module TypeScript
+module Spider
   module Node
     class CompileResult
-
-      # Constructor
-      #
-      # @param [String] js compiled JavaScript
-      # @param [Fixnum] exit_status return code of tsc command
-      # @param [String] stdout Standard out
-      # @return [String] stderr Standard err
+      
       def initialize(js, exit_status, stdout, stderr)
         @js = js
         @exit_status = exit_status
