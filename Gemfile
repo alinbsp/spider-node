@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in spider-node.gemspec
+group :test do
+  gem 'test-unit', '~> 3.0.0'
+end
+
 gemspec
