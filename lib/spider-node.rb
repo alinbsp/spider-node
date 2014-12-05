@@ -41,8 +41,6 @@ module Spider
               stderr,
           )
         end
-        # mapfile = File.join(target_dir, target + '.map')
-        # File.delete mapfile
       end
 
     def compile(source, *spiderc_options)
@@ -51,6 +49,7 @@ module Spider
         js_file.write(source)
         js_file.close
         result = compile_file(js_file.path, *spiderc_options)
+
         if result.success?
           result.js
         else

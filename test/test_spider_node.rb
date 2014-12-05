@@ -22,4 +22,11 @@ class TestSpiderNode < Test::Unit::TestCase
     assert { subject.stderr == '' }
   end
 
+  def test_compile
+    subject = Spider::Node.compile('var a = 5;')
+
+    assert { subject != '' }
+    assert { subject != nil }
+  end
+
 end
