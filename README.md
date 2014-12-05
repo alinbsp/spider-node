@@ -25,14 +25,15 @@ require 'spider-node'
 Spider::Node.check_node
 
 # compiles a Spider source file and returns Spider::Node::CompileResult
-result = Spider::Node.compile_file(file, '--target', 'ES5')
+result = Spider::Node.compile_file(file)
 result.success? # => true if succeeded
 result.js # => output JavaScript source code
 result.stdout # => what tsc(1) shows to stdout
 result.stderr # => what tsc(1) shows to stderr
 
 # compiles a Spider source code string and returns String
-js_source = spider::Node.compile_file(ts_source, '--target', 'ES5')
+js_source = spider::Node.compile_file(source)
+```
 
 ## Contributing
 
